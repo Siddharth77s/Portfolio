@@ -9,89 +9,99 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Siddharth Shinde</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<header class="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<section id="hero" class="hero-section">
+  <div class="container hero-text">
+    <h1>Siddharth Shinde</h1>
+    <p>Cybersecurity Enthusiast & Full Stack Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+  <div class="hero-image container">
+    <img src="images/photo.jpg" alt="Siddharth Shinde Photo" />
+  </div>
+</section>
+
+<section id="about" class="container section">
+  <h2>About Me</h2>
+  <p>I'm a passionate Full Stack Developer and Cybersecurity enthusiast with a strong foundation in software engineering. From building scalable web applications to identifying system vulnerabilities, I thrive at the intersection of development and security. I enjoy crafting clean, efficient code and creating secure, user-friendly experiences that make a real impact.</p>
+</section>
+
+<section id="skills" class="container section">
+  <h2>Skills</h2>
+  <ul class="skills-grid">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>SQL</li>
+    <li>React.js</li>
+    <li>Node.js</li>
+    <li>Git & GitHub</li>
+    <li>Network Security</li>
+    <li>Penetration Testing</li>
+    <li>GDPR Compliance</li>
+  </ul>
+</section>
+
+<section id="projects" class="container section">
+  <h2>Projects</h2>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+  </div>
+  <div class="projects-grid">
+    <div class="project" data-category="cybersecurity">
+      <h3>Phishing Detector</h3>
+      <p>Detects phishing URLs using security patterns and real-time threat intelligence.</p>
     </div>
-  </header>
-
-  <section id="hero">
-    <div class="container">
-      <h2>Cybersecurity Enthusiast & Full Stack Developer</h2>
-      <p>Passionate about securing systems and building smart web solutions.</p>
-      <a href="#projects" class="btn">View My Work</a>
+    <div class="project" data-category="fullstack">
+      <h3>Secure Login System</h3>
+      <p>Full-stack login system with hashed passwords and brute-force protection.</p>
     </div>
-  </section>
-
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>I’m a BTech CSE student specializing in Cybersecurity, experienced in software development, vulnerability assessment, and web technologies. I'm always building, learning, and pushing the boundaries of secure tech.</p>
-  </section>
-
-  <section id="skills" class="container">
-    <h2>Skills</h2>
-    <ul class="skills-grid">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>Python</li>
-      <li>SQL</li>
-      <li>React.js</li>
-      <li>Node.js</li>
-      <li>Git & GitHub</li>
-      <li>Network Security</li>
-      <li>Penetration Testing</li>
-      <li>GDPR Compliance</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Secure Login System</h3>
-        <p>A full-stack login system with hashed passwords, session control, and brute force protection.</p>
-        <a href="https://github.com/yourgithub/secure-login" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>This very site – designed and built by me to showcase projects, skills, and secure development practice.</p>
-        <a href="https://github.com/yourgithub/portfolio" target="_blank">View on GitHub</a>
-      </div>
+    <div class="project" data-category="java">
+      <h3>Java Performance Analyzer</h3>
+      <p>A tool to analyze and optimize Java application performance with real-time metrics.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="resume" class="container">
-    <h2>Resume</h2>
-    <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-  </section>
+<section id="resume" class="container section">
+  <h2>Resume</h2>
+  <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+</section>
 
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <form name="contact" netlify>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+<section id="contact" class="container section">
+  <h2>Contact Me</h2>
+  <form name="contact" netlify>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Siddharth Shinde</p>
-      <div class="socials">
-        <a href="https://github.com/yourgithub" target="_blank">GitHub</a> |
-        <a href="mailto:your.email@example.com">Email Me</a>
-      </div>
+<footer>
+  <div class="container">
+    <p>© 2025 Siddharth Shinde</p>
+    <div class="socials">
+      <a href="https://github.com/Siddharth77s" target="_blank">GitHub</a> |
+      <a href="mailto:siddharthshinde9476@gmail.com">Email Me</a>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
